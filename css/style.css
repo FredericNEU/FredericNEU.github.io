@@ -60,6 +60,7 @@ body {
     display: grid;
     gap: 5px;
     margin-bottom: 1rem;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .pictures img{
@@ -67,19 +68,16 @@ body {
     height: 100%;
 }
 
-@media (max-width: 576px) { /* Téléphones - jusqu'à 576px */
-    .pictures {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
 
-@media (min-width: 577px) and (max-width: 992px) { /* Tablettes - de 577px à 992px */
+/* Format tablettes à partir de 768 pixel de large */
+@media (min-width: 768px) { 
     .pictures {
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
-@media (min-width: 993px) { /* Desktop - à partir de 993px */
+/* Format desktop à partir de 992 pixel de large */
+@media (min-width: 992px) { 
     .pictures {
         grid-template-columns: repeat(4, 1fr);
     }

@@ -30,10 +30,11 @@ body {
 .welcome p {
     margin: 2rem;
     text-align: justify;
+    font-size: 0.8rem;
 }
 
 .welcome h1 {
-    font-size: 2rem;
+    font-size: 1rem;
     text-align: center;
     font-weight: bold;
     color: #333;
@@ -74,12 +75,19 @@ body {
     .pictures {
         grid-template-columns: repeat(3, 1fr);
     }
+    
+    .welcome h1 {
+        font-size: 2rem;
+    }
 }
 
 /* Format desktop à partir de 992 pixel de large */
 @media (min-width: 992px) { 
     .pictures {
         grid-template-columns: repeat(4, 1fr);
+    }
+    .welcome h1 {
+        font-size: 2rem;
     }
 }
     
